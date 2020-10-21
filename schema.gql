@@ -1,0 +1,55 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Film {
+  episode_id: Float!
+
+  """Name"""
+  title: String!
+
+  """Description"""
+  opening_crawl: String!
+
+  """Director"""
+  director: String!
+
+  """Producer"""
+  producer: String!
+
+  """Release"""
+  release_date: String!
+
+  """List characters"""
+  characters: [String!]!
+
+  """List planets"""
+  planets: [String!]!
+
+  """List starships"""
+  starships: [String!]!
+
+  """List vehicles"""
+  vehicles: [String!]!
+
+  """List species"""
+  species: [String!]!
+
+  """Date of created"""
+  created: DateTime!
+
+  """Date of edited"""
+  edited: DateTime!
+
+  """Url"""
+  url: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  films: [Film!]!
+}
